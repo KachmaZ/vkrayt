@@ -6,6 +6,49 @@
     align-items: center;
 
     background-color: $white;
+
+    &_contacts {
+        display: flex;
+        align-items: center;
+
+        .region {
+            display: flex;
+            align-items: center;
+
+            &_select {
+                border: none;
+
+                &:focus-visible  {
+                    border: none;
+                }
+            }
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &_tools {
+        display: flex;
+        align-items: center;
+
+        .product-tools {
+            display: flex;
+
+            &_icon {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    background-color: $light;
+                }
+            }
+        }
+    }
 }
 
 .header-nav {

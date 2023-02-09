@@ -2891,6 +2891,32 @@ button {
   justify-content: space-between;
   align-items: center;
   background-color: #FFFFFF; }
+  .header-ui_contacts {
+    display: flex;
+    align-items: center; }
+    .header-ui_contacts .region {
+      display: flex;
+      align-items: center; }
+      .header-ui_contacts .region_select {
+        border: none; }
+        .header-ui_contacts .region_select:focus-visible {
+          border: none; }
+    .header-ui_contacts .phone {
+      display: flex;
+      align-items: center; }
+  .header-ui_tools {
+    display: flex;
+    align-items: center; }
+    .header-ui_tools .product-tools {
+      display: flex; }
+      .header-ui_tools .product-tools_icon {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .header-ui_tools .product-tools_icon:hover {
+          background-color: #F8F8F8; }
 
 .header-nav {
   width: 100%;
