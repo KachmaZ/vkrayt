@@ -2851,6 +2851,9 @@ button {
       height: 100%;
       display: flex;
       align-items: center; }
+      .intro-content_img img {
+        height: 100%;
+        max-height: 548px; }
 
 .popular_grid {
   display: grid;
@@ -2882,18 +2885,26 @@ button {
         width: 200px;
         height: 260px; } }
 
-header {
+.header-ui {
+  padding: 24px 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF; }
+
+.header-nav {
   width: 100%;
-  position: fixed;
+  padding: 24px 50px !important;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  left: 0; }
-  header .header-ui {
-    padding: 24px 0;
-    background-color: #FFFFFF; }
-  header .header-nav {
-    width: 100%;
-    padding: 24px 50px;
-    background-color: #F8F8F8; }
+  display: flex;
+  justify-content: space-between;
+  background-color: #F8F8F8; }
+  .header-nav .nav_link {
+    transition: opacity ease-in 100ms; }
+    .header-nav .nav_link:hover {
+      opacity: 0.5; }
 
 * {
   margin: 0;
