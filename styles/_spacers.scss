@@ -1,0 +1,84 @@
+@mixin spacing($cssValue, $spacersArray) {
+    @each $spacerKey, $spacer in $spacersArray {
+        &-#{$spacerKey}{
+            #{$cssValue}: $spacer;
+        }
+
+        &-sm {
+            @include respond-above(sm){
+                &-#{$spacerKey}{
+                    #{$cssValue}: $spacer !important;
+                }
+            }
+        }
+
+        &-md {
+            @include respond-above(md){
+                &-#{$spacerKey}{
+                    #{$cssValue}: $spacer !important;
+                }
+            }
+        }
+
+        &-lg {
+            @include respond-above(lg){
+                &-#{$spacerKey}{
+                    #{$cssValue}: $spacer !important;
+                }
+            }
+        }
+
+        &-wxpp {        
+            @include respond-above(wxpp){    
+                &-#{$spacerKey}{
+                    #{$cssValue}: $spacer !important;
+                }
+            }
+        }
+    }
+}
+
+// App global spaces values
+$spacers: (
+    0: 0,
+    1: 4px,
+    2: 8px,
+    3: 10px,
+    4: 12px,
+    5: 16px,
+    6: 20px,
+    7: 24px,
+    8: 30px,
+    9: 40px,
+    10: 60px,
+    11: 70px,
+    12: 120px,
+    13: 172px,
+);
+
+// Set for creating a classes with properties
+// ClassName: PropertyName 
+$properties: (
+    m: margin,
+    mr: margin-right,
+    ml: margin-left,
+    mt: margin-top,
+    mb: margin-bottom,
+    
+    p: padding,
+    pr: padding-right,
+    pl: padding-left,
+    pt: padding-top,
+    pb: padding-bottom,
+);
+
+@each $propClass, $propName in $properties {
+    .#{$propClass}{
+        @include spacing(#{$propName}, $spacers)
+    }
+}
+
+// Usable classes examples:
+// .p-lg-8  => media>992px padding: 104px
+// .m-4     =>             margin: 24px
+// .mt-md-7 => media>768px margin-top: 64px

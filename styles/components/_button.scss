@@ -1,0 +1,31 @@
+button {
+    height: 54px;
+    width: 100%;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border: none;
+
+}
+
+.btn {
+    &-1 {
+        color: $white;
+        background-color: $greyDark;
+
+        &:hover {
+            background-color: $grey;
+        }
+
+        &:active {
+            background-color: $black;
+        };
+    }
+
+    &-2 {
+        
+        color: $black;
+        background-color: $white;
+    }
+}

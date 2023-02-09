@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Prata;
+    src: url(../assets/fonts/Prata-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts//Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+
+.text {
+    @mixin text-breakpoints() {
+        &-1 {            
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &-2 {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        &-3 {
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 29px;
+        }
+    }
+
+    @include text-breakpoints();
+
+    &-sm {
+        @include respond-above(sm) {
+            @include text-breakpoints()
+        }
+    }
+
+    &-md {
+        @include respond-above(md) {
+            @include text-breakpoints()
+        }
+    }
+
+    &-lg {
+        @include respond-above(lg) {
+            @include text-breakpoints()
+        }
+    }
+}
+
+.h {
+    @mixin head-breakpoints() {
+        &-1 {
+            font-family: Prata;
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        &-2 {
+            font-family: Prata;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        &-3 {
+            font-family: Prata;
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        &-4 {
+            
+            font-family: Prata;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    @include head-breakpoints();
+
+    &-sm {
+        @include respond-above(sm) {
+            @include head-breakpoints();
+        }
+    }
+
+    &-md {
+        @include respond-above(md) {
+            @include head-breakpoints();
+        }
+    }
+
+    &-lg {
+        @include respond-above(lg) {
+            @include head-breakpoints();
+        }
+    }
+}
