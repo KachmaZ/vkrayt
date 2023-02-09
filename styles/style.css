@@ -2894,13 +2894,15 @@ button {
 
 .header-nav {
   width: 100%;
-  padding: 24px 50px !important;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-between;
-  background-color: #F8F8F8; }
+  justify-content: space-between; }
+  .header-nav_wrapper {
+    width: 100%;
+    padding: 24px 50px;
+    background-color: #F8F8F8; }
   .header-nav .nav_link {
     transition: opacity ease-in 100ms; }
     .header-nav .nav_link:hover {
