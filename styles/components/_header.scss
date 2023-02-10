@@ -1,5 +1,5 @@
 .header-ui {
-    padding: 24px 0 !important;
+    padding: 20px 0 !important;
 
     display: flex;
     justify-content: space-between;
@@ -63,18 +63,38 @@
 
     &_wrapper {
         width: 100%;
-        padding: 24px 50px;
+
+        display: flex;
+
         background-color: $light;
 
     }
 
     .nav {
+        padding: 22px 110px 22px 50px;
+
+        border-right: 1px solid $greyTransparent;
+
         &_link {
+            font-family: Intro;
+            font-size: 13px;
+            font-weight: 500;
+
             transition: opacity ease-in 100ms;
 
             &:hover {
                 opacity: 0.5;
             }
+        }
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+
+        input[type="search"] {
+            background-color: $light;
+            border: none;
         }
     }
 }

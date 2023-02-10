@@ -1,0 +1,24 @@
+.rounded-btn {
+    width: auto;
+    height: auto;
+    padding: 13px 30px;
+    
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+
+    background-color: $greyTransparent;
+    border-radius: 21px;
+
+    transition: background-color ease-in 100ms;
+
+    &:hover {
+        background-color: $greyLight;
+    }
+
+    &.active {
+        color: $white;
+
+        background-color: $greyDark;
+    }
+}

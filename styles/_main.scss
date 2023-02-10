@@ -3,10 +3,12 @@
 @import '_typography';
 @import '_variables';
 
-@import 'components/button';
-@import 'components/intro';
-@import 'components/popular';
 @import 'components/header';
+@import 'components/intro';
+@import 'components/button';
+@import 'components/popular';
+@import 'components/roundedButton';
+@import 'components/sale';
 
 * {
     margin: 0;
@@ -23,28 +25,16 @@
     max-width: 576px;
 
     @include respond-above(sm) {
-        max-width: 768px;
-        padding: 0 50px;
+        max-width: 700px;
+        // padding: 0 50px;
     }
 
     @include respond-above(md) {
-        max-width: 992px;
-    }
-
-    @include respond-above(lg) {
-        max-width: 1280px;
+        max-width: 1200px;
     }
 
     @include respond-above(xl) {
-        max-width: 1380px;
-    }
-
-    @include respond-above(wxp) {
-        max-width: 1560px;
-    }
-
-    @include respond-above(wxpp) {
-        max-width: 1920px;
+        max-width: 1300px;
     }
 }
 

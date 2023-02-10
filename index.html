@@ -75,7 +75,7 @@
     </div>
     <div class="header-nav container">
         <div class="header-nav_wrapper">
-            <nav class="nav">
+            <nav class="nav mr-7">
                 <a href="" class="nav_link mr-sm-10">
                     КАТАЛОГ
                 </a>
@@ -98,24 +98,31 @@
                     СТАТЬИ
                 </a>
             </nav>
-            <div class="search"></div>
+            <form class="search">
+                <svg class="mr-4" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2 8.5C13.2 11.0957 11.0957 13.2 8.5 13.2C5.90426 13.2 3.8 11.0957 3.8 8.5C3.8 5.90426 5.90426 3.8 8.5 3.8C11.0957 3.8 13.2 5.90426 13.2 8.5ZM12.062 13.938C11.039 14.6094 9.81512 15 8.5 15C4.91015 15 2 12.0899 2 8.5C2 4.91015 4.91015 2 8.5 2C12.0899 2 15 4.91015 15 8.5C15 10.1561 14.3806 11.6676 13.3609 12.8153L17.2728 16.7272L16 18L12 14L12.062 13.938Z" fill="#303030"/>
+                </svg>  
+                <input class="text-1" type="search" name="" id="" placeholder="Search">
+            </form>
         </div>
     </div>
     <main class="container">
         <section class="pt-6 mb-lg-12">
             <div class="intro" id="slider-intro">
                 <div class="intro-content slider_content">
-                    <div class="intro-content_desc">
-                        <div class="desc">
-                            <h4 class="h-lg-4 mb-lg-8">Суперскидка до 60%</h4>
-                            <h1 class="h-lg-1 mb-lg-10">НА БРИЛЛИАНТЫ</h1>
-                            <div class="desc_button-wrapper">
-                                <button class="btn-1">ПОДРОБНЕЕ</button>
+                    <div class="intro-slide slider_slide">
+                        <div class="intro-slide_desc">
+                            <div class="desc pt-9 pt-lg-0">
+                                <h4 class="h-4 mb-5 mb-lg-8">Суперскидка до 60%</h4>
+                                <h1 class="h-lg-1 mb-lg-10">НА БРИЛЛИАНТЫ</h1>
+                                <div class="desc_button-wrapper">
+                                    <button class="btn-1">ПОДРОБНЕЕ</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="intro-content_img">
-                        <img src="assets/images/goldRing.png" alt="" srcset="">
+                        <div class="intro-slide_img">
+                            <img src="assets/images/goldRing.png" alt="" srcset="">
+                        </div>
                     </div>
                 </div>
                 <div class="slider_left"></div>
@@ -169,15 +176,29 @@
         </section>
 
         <section class="mb-lg-12">
-            <h2 class="h-lg-2">Распродажа</h2>
+            <div class="sale">
+                <h2 class="h-lg-2 mb-7">Распродажа</h2>
+                <div class="sale_head">
+                    <div class="buttons">
+                        <button class="rounded-btn active mr-2">Кольца</button>
+                        <button class="rounded-btn mr-2">Серьги</button>
+                        <button class="rounded-btn mr-2">Браслеты</button>
+                        <button class="rounded-btn mr-2">Часы</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="mb-lg-12">
-            <h2 class="h-lg-2">Товар дня</h2>
+            <div class="daily">
+                <h2 class="h-lg-2">Товар дня</h2>
+            </div>
         </section>
 
         <section class="mb-lg-12">
-            <h2 class="h-lg-2">Статьи</h2>
+            <div class="articles">
+                <h2 class="h-lg-2">Статьи</h2>
+            </div>
         </section>
     </main>
 </body>
