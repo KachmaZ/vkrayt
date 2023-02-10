@@ -6,6 +6,8 @@
     &-slide {
         height: 100%;
 
+        position: relative;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -13,7 +15,10 @@
 
         background-color: $light;
 
+        overflow: hidden;
+
         &_desc {
+            z-index: 1;
             .desc {
                 &_button-wrapper {
                     width: 200px;
@@ -27,6 +32,12 @@
             img {
                 height: 100%;
             }
+        }
+
+        &_diamond {
+            position: absolute;
+            top: 24px;
+            left: -110px;
         }
     }
 

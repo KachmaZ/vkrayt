@@ -3,7 +3,7 @@
         margin-bottom: 36px;
     }
 
-    &_grid {
+    &_cards-grid {
         display: grid;
         justify-items: center;  
         justify-content: center;
@@ -11,13 +11,22 @@
         grid-template-columns: 1fr;
         gap: 20px;
 
-        @include respond-above(md) {
-            justify-content: space-between;
-        }
-
         @include respond-above(sm) {
             grid-template-columns: repeat(auto-fit, 310px);
         }
     }
 
+    &_specials-grid {
+        display: grid;
+        justify-items: center;  
+        justify-content: center;
+
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        @include respond-above(sm) {
+            grid-template-columns: repeat(auto-fit, 420px);
+        }
+
+    }
 }

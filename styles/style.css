@@ -2694,6 +2694,12 @@
   font-weight: 600;
   line-height: 29px; }
 
+.text-4 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px; }
+
 @media screen and (min-width: 576px) {
   .text-sm-1 {
     font-family: Inter;
@@ -2707,7 +2713,12 @@
     font-family: Inter;
     font-size: 18px;
     font-weight: 600;
-    line-height: 29px; } }
+    line-height: 29px; }
+  .text-sm-4 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px; } }
 
 @media screen and (min-width: 768px) {
   .text-md-1 {
@@ -2722,7 +2733,12 @@
     font-family: Inter;
     font-size: 18px;
     font-weight: 600;
-    line-height: 29px; } }
+    line-height: 29px; }
+  .text-md-4 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px; } }
 
 @media screen and (min-width: 992px) {
   .text-lg-1 {
@@ -2737,7 +2753,12 @@
     font-family: Inter;
     font-size: 18px;
     font-weight: 600;
-    line-height: 29px; } }
+    line-height: 29px; }
+  .text-lg-4 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px; } }
 
 .h-1 {
   font-family: Prata;
@@ -2885,18 +2906,26 @@
 
 .intro-slide {
   height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #F8F8F8; }
-  .intro-slide_desc .desc_button-wrapper {
-    width: 200px; }
+  background-color: #F8F8F8;
+  overflow: hidden; }
+  .intro-slide_desc {
+    z-index: 1; }
+    .intro-slide_desc .desc_button-wrapper {
+      width: 200px; }
   .intro-slide_img {
     height: 100%;
     max-height: 548px; }
     .intro-slide_img img {
       height: 100%; }
+  .intro-slide_diamond {
+    position: absolute;
+    top: 24px;
+    left: -110px; }
 
 @media screen and (min-width: 992px) {
   .intro {
@@ -2980,20 +3009,28 @@ button {
 .sale_head {
   margin-bottom: 36px; }
 
-.sale_grid {
+.sale_cards-grid {
   display: grid;
   justify-items: center;
   justify-content: center;
   grid-template-columns: 1fr;
   gap: 20px; }
-  @media screen and (min-width: 768px) {
-    .sale_grid {
-      justify-content: space-between; } }
   @media screen and (min-width: 576px) {
-    .sale_grid {
+    .sale_cards-grid {
       grid-template-columns: repeat(auto-fit, 310px); } }
 
+.sale_specials-grid {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 20px; }
+  @media screen and (min-width: 576px) {
+    .sale_specials-grid {
+      grid-template-columns: repeat(auto-fit, 420px); } }
+
 .sale-card {
+  height: 370px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -3049,6 +3086,7 @@ button {
       .sale-card_select select:focus-visible {
         outline: none; }
   .sale-card:hover {
+    height: 480px;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1); }
     .sale-card:hover .sale-card_select {
       display: block; }
@@ -3080,6 +3118,48 @@ button {
     background-color: #E1A661; }
   .tag__new {
     background-color: #495159; }
+
+.special {
+  width: 420px;
+  height: 290px;
+  position: relative;
+  background-color: #F8F8F8;
+  overflow: hidden; }
+  .special_diamond {
+    position: absolute;
+    top: 26px;
+    left: -130px; }
+  .special_img, .special_text, .special_belt {
+    position: absolute;
+    z-index: 1; }
+  .special_img {
+    top: 0;
+    right: 0; }
+  .special_text {
+    max-width: 220px;
+    top: 72px;
+    left: 26px;
+    text-transform: uppercase; }
+  .special_belt {
+    width: 194px;
+    height: 52px;
+    bottom: 48px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 24px; }
+    .special_belt__percent {
+      color: inherit;
+      font-size: 36px; }
+    .special_belt.blue {
+      background-color: #43807F; }
+    .special_belt.red {
+      background-color: #E24B33; }
+    .special_belt.gold {
+      background-color: #E1A661; }
 
 * {
   margin: 0;
