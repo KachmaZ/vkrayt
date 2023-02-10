@@ -2,9 +2,14 @@
     &_grid {
         display: grid;
         justify-items: center;  
+        justify-content: center;
 
         grid-template-columns: 1fr;
         gap: 20px;
+
+        @include respond-above(md) {
+            justify-content: space-between;
+        }
 
         @include respond-above(sm) {
             grid-template-columns: repeat(auto-fit, 200px);

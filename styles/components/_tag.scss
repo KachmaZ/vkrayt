@@ -1,0 +1,31 @@
+.tag {    
+    width: 50px;
+    height: 21px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    color: $white;
+    font-family: Intro;
+    font-size: 13px;
+    font-weight: 500;
+
+    border-radius: 15px;
+
+    &__discount {
+        background-color: $red;
+    }
+
+    &__sale {
+        background-color: $blueLight;
+    }
+
+    &__hit {
+        background-color: $gold;
+    }
+
+    &__new {
+        background-color: #495159;
+    }
+}

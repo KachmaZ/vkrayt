@@ -2832,7 +2832,7 @@
       .header-ui_contacts .region_select {
         border: none; }
         .header-ui_contacts .region_select:focus-visible {
-          border: none; }
+          outline: none; }
     .header-ui_contacts .phone {
       display: flex;
       align-items: center; }
@@ -2846,7 +2846,8 @@
         height: 32px;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        cursor: pointer; }
         .header-ui_tools .product-tools_icon:hover {
           background-color: #F8F8F8; }
 
@@ -2855,6 +2856,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between; }
   .header-nav_wrapper {
@@ -2928,8 +2930,12 @@ button {
 .popular_grid {
   display: grid;
   justify-items: center;
+  justify-content: center;
   grid-template-columns: 1fr;
   gap: 20px; }
+  @media screen and (min-width: 768px) {
+    .popular_grid {
+      justify-content: space-between; } }
   @media screen and (min-width: 576px) {
     .popular_grid {
       grid-template-columns: repeat(auto-fit, 200px); } }
@@ -2970,6 +2976,110 @@ button {
   .rounded-btn.active {
     color: #FFFFFF;
     background-color: #303030; }
+
+.sale_head {
+  margin-bottom: 36px; }
+
+.sale_grid {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 20px; }
+  @media screen and (min-width: 768px) {
+    .sale_grid {
+      justify-content: space-between; } }
+  @media screen and (min-width: 576px) {
+    .sale_grid {
+      grid-template-columns: repeat(auto-fit, 310px); } }
+
+.sale-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #F0F0F0; }
+  .sale-card_tags {
+    position: absolute;
+    left: 24px;
+    top: 16px; }
+  .sale-card_icons {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    display: flex;
+    flex-direction: column; }
+    .sale-card_icons svg {
+      fill: #C9C9C9;
+      cursor: pointer; }
+    .sale-card_icons svg:hover {
+      fill: #979797; }
+  .sale-card_images {
+    width: 200px;
+    height: 200px;
+    overflow: hidden; }
+  .sale-card_desc .desc_price {
+    margin-bottom: 16px;
+    position: relative; }
+    .sale-card_desc .desc_price__current {
+      margin-right: 8px;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 29px; }
+    .sale-card_desc .desc_price__old {
+      color: #8F8F8F;
+      text-decoration-line: line-through; }
+    .sale-card_desc .desc_price__discount {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+  .sale-card_desc .desc_text {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400; }
+  .sale-card_select {
+    display: none; }
+    .sale-card_select select {
+      width: 262px;
+      height: 40px;
+      padding: 0 16px;
+      background-color: #F0F0F0;
+      border: none; }
+      .sale-card_select select:focus-visible {
+        outline: none; }
+  .sale-card:hover {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1); }
+    .sale-card:hover .sale-card_select {
+      display: block; }
+  @media screen and (min-width: 576px) {
+    .sale-card {
+      width: 310px;
+      padding-top: 40px; }
+      .sale-card_images {
+        margin-bottom: 24px; }
+      .sale-card_desc {
+        width: 262px; } }
+
+.tag {
+  width: 50px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: Intro;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px; }
+  .tag__discount {
+    background-color: #E24B33; }
+  .tag__sale {
+    background-color: #5B8A8F; }
+  .tag__hit {
+    background-color: #E1A661; }
+  .tag__new {
+    background-color: #495159; }
 
 * {
   margin: 0;
