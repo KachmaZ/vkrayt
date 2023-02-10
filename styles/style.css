@@ -3031,6 +3031,7 @@ button {
 
 .sale-card {
   height: 370px;
+  margin-bottom: 120px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -3087,6 +3088,7 @@ button {
         outline: none; }
   .sale-card:hover {
     height: 480px;
+    margin-bottom: 10px;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1); }
     .sale-card:hover .sale-card_select {
       display: block; }
