@@ -1,0 +1,18 @@
+.articles {
+    &_grid {        
+        display: grid;
+        justify-items: center;  
+        justify-content: center;
+
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        @include respond-above(sm) {
+            grid-template-columns: repeat(auto-fit, 310px);
+        }
+
+        @include respond-above(xl) {            
+            grid-template-columns: repeat(4, 310px);
+        }
+    }
+}

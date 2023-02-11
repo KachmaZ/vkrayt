@@ -1,0 +1,25 @@
+.rating {
+    display: flex;
+
+    &_stars {
+        display: flex;
+    }
+
+    &_star {
+        width: 17px;
+        height: 17px;
+
+        margin-right: 6px;
+
+        stroke:  $gold;
+        fill: transparent;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            fill: $gold
+        }
+    }
+}

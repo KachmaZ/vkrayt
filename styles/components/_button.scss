@@ -12,6 +12,8 @@ button {
 .btn {
     &-1 {
         color: $white;
+        text-transform: uppercase;
+
         background-color: $greyDark;
 
         &:hover {
@@ -23,9 +25,24 @@ button {
         };
     }
 
-    &-2 {
-        
+    &-2 {        
         color: $black;
+        text-transform: uppercase;
+
         background-color: $white;
+
+        border: 1px solid $greyDark;
+
+        &:hover {
+            color: $white;
+
+            background-color: $greyDark;
+        }
+
+        &:active {
+            color: $white;
+
+            background-color: $black;
+        }
     }
 }
