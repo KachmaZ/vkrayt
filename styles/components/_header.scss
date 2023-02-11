@@ -12,11 +12,23 @@
         align-items: center;
 
         .region {
+            height: 16px;
+
             display: flex;
             align-items: center;
 
+            cursor: pointer;
+
+            transition: ease-in 100ms;
+
+            &:hover {
+                opacity: 0.5;
+            }
+
             &_select {
                 border: none;
+                
+                cursor: pointer;
 
                 &:focus-visible  {
                     outline: none;
@@ -27,12 +39,24 @@
         .phone {
             display: flex;
             align-items: center;
+            
+            transition: ease-in 100ms;
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 
     &_tools {
         display: flex;
         align-items: center;
+
+        .auth {
+            a:hover {
+                opacity: 0.5;
+            }
+        }
 
         .product-tools {
             display: flex;
@@ -45,6 +69,8 @@
                 align-items: center;
 
                 cursor: pointer;
+
+                transition: ease-in 100ms;
 
                 &:hover {
                     background-color: $light;
@@ -96,9 +122,17 @@
         display: flex;
         align-items: center;
 
-        input[type="search"] {
+        input[type="search"] {        
             background-color: $light;
             border: none;
+
+            &::placeholder {
+                color: #A2A2A2;
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
         }
     }
 }

@@ -34,13 +34,27 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                transition: ease-in 200ms;
             }
 
             &_title {
                 height: 66px;
+                padding: 0 20px;
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                text-align: center;
+            }
+
+            &:hover {
+                .category-card {
+                    &_img {
+                        transform: scale(1.2);
+                    }
+                }
             }
 
             @include respond-above(sm) {

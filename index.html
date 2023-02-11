@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение шрифтов из Гугл -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prata&display=swap"
+        rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/style.css">
     <title>Goldy Store</title>
 </head>
 <body>
+
+    <!-- Хедер -->
+
     <div class="container">
         <div class="header-ui">
             <div class="header-ui_contacts">
                 <div class="region mr-lg-10">
-                    <div class="region_icon">
-                        <svg class="mr-lg-3" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.99995 0C4.80479 0 2.20535 2.59944 2.20535 5.79456C2.20535 9.75981 7.39095 15.581 7.61173 15.8269C7.8191 16.0579 8.18117 16.0575 8.38817 15.8269C8.60895 15.581 13.7945 9.75981 13.7945 5.79456C13.7945 2.59944 11.1951 0 7.99995 0ZM7.99995 8.70997C6.39238 8.70997 5.08457 7.40213 5.08457 5.79456C5.08457 4.187 6.39242 2.87919 7.99995 2.87919C9.60748 2.87919 10.9153 4.18703 10.9153 5.79459C10.9153 7.40216 9.60748 8.70997 7.99995 8.70997Z" fill="#303030"/>
-                        </svg>
-                    </div>
+                    <svg class="mr-lg-2" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.99995 0C4.80479 0 2.20535 2.59944 2.20535 5.79456C2.20535 9.75981 7.39095 15.581 7.61173 15.8269C7.8191 16.0579 8.18117 16.0575 8.38817 15.8269C8.60895 15.581 13.7945 9.75981 13.7945 5.79456C13.7945 2.59944 11.1951 0 7.99995 0ZM7.99995 8.70997C6.39238 8.70997 5.08457 7.40213 5.08457 5.79456C5.08457 4.187 6.39242 2.87919 7.99995 2.87919C9.60748 2.87919 10.9153 4.18703 10.9153 5.79459C10.9153 7.40216 9.60748 8.70997 7.99995 8.70997Z" fill="#303030"/>
+                    </svg>
                     <select class="region_select text-1" name="" id="">                            
                         <option>Санкт-Петербург</option>
                         <option>Москва</option>
@@ -37,13 +47,16 @@
                     <span>8 800 785-25-35</span>
                 </a>
             </div>
+
             <div class="header-ui_logo">
                 <img src="assets/images/logo.png" alt="Лого">
             </div>
+
             <div class="header-ui_tools">
                 <div class="auth text-1 mr-lg-11">
                     <a href="" class="mr-lg-3">Вход</a><span>|</span><a href="" class="ml-lg-3">Регистрация</a>
                 </div>
+                
                 <div class="product-tools">
                     <div class="product-tools_icon mr-lg-8">
                         <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -73,6 +86,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Липкая панель навигации -->
+
     <div class="header-nav container">
         <div class="header-nav_wrapper">
             <nav class="nav mr-7">
@@ -102,11 +118,14 @@
                 <svg class="mr-4" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2 8.5C13.2 11.0957 11.0957 13.2 8.5 13.2C5.90426 13.2 3.8 11.0957 3.8 8.5C3.8 5.90426 5.90426 3.8 8.5 3.8C11.0957 3.8 13.2 5.90426 13.2 8.5ZM12.062 13.938C11.039 14.6094 9.81512 15 8.5 15C4.91015 15 2 12.0899 2 8.5C2 4.91015 4.91015 2 8.5 2C12.0899 2 15 4.91015 15 8.5C15 10.1561 14.3806 11.6676 13.3609 12.8153L17.2728 16.7272L16 18L12 14L12.062 13.938Z" fill="#303030"/>
                 </svg>  
-                <input class="text-1" type="search" name="" id="" placeholder="Search">
+                <input class="text-1" type="search" name="" id="" placeholder="Поиск по сайту">
             </form>
         </div>
     </div>
     <main class="container">
+
+        <!-- Приветствие -->
+
         <section class="pt-6 mb-lg-12">
             <div class="intro" id="slider-intro">
                 <div class="intro-content slider_content">
@@ -132,41 +151,48 @@
             </div>
         </section>
     
+        <!-- Популярные категории -->
+
         <section class="mb-lg-12">
             <div class="popular">
                 <h2 class="h-lg-2 mb-lg-9">Популярные категории</h2>
                 <div class="popular_grid p-5 p-sm-0">
-                    <a class="category-card">
+                    <a class="category-card" href="">
                         <div class="category-card_img">
                             <img src="assets/images/cat-ring.png" alt="Категория Кольца">
                         </div>
                         <div class="category-card_title text-2">Кольца</div>
                     </a>
-                    <a class="category-card">
+
+                    <a class="category-card" href="">
                         <div class="category-card_img">
                             <img src="assets/images/cat-earring.png" alt="Категория Серьги">
                         </div>
                         <div class="category-card_title text-2">Серьги</div>
                     </a>
-                    <a class="category-card">
+
+                    <a class="category-card" href="">
                         <div class="category-card_img">
                             <img src="assets/images/cat-wedring.png" alt="Категория Помолвочные кольца">
                         </div>
                         <div class="category-card_title text-2">Помолвочные кольца</div>
                     </a>
-                    <a class="category-card">
+
+                    <a class="category-card" href="">
                         <div class="category-card_img">
                             <img src="assets/images/cat-bracer.png" alt="Категория Браслеты">
                         </div>
                         <div class="category-card_title text-2">Браслеты</div>
                     </a>
-                    <a class="category-card">
+
+                    <a class="category-card" href="">
                         <div class="category-card_img">
                             <img src="assets/images/cat-necklace.png" alt="Категория Колье и Подвески">
                         </div>
                         <div class="category-card_title text-2">Колье и Подвески</div>
                     </a>
-                    <a class="category-card">
+
+                    <a class="category-card" href="">
                         <div class="category-card_img">
                             <img src="assets/images/cat-watch.png" alt="Категория Часы">
                         </div>
@@ -175,6 +201,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Распродажа -->
 
         <section class="mb-lg-12">
             <div class="sale">
@@ -188,10 +216,11 @@
                     </div>
                 </div>
                 <div class="sale_cards-grid">
-                    <div class="sale-card">
+                    <a class="sale-card" href="">
                         <div class="sale-card_tags">
                             <span class="tag tag__sale">Sale</span>
                         </div>
+
                         <div class="sale-card_icons">
                             <svg class="mb-3" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 8.40001C1.99975 6.95035 2.58239 5.56146 3.61681 4.54584C4.65124 3.53022 6.05058 2.97317 7.5 3.00001C9.21732 2.99089 10.856 3.71919 12 5.00001C13.144 3.71919 14.7827 2.99089 16.5 3.00001C17.9494 2.97317 19.3488 3.53022 20.3832 4.54584C21.4176 5.56146 22.0002 6.95035 22 8.40001C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.40001Z"/>
@@ -200,9 +229,11 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z"/>
                             </svg>
                         </div>
+
                         <div class="sale-card_images imgs-slider">
                             <img src="assets/images/saleCard_1.png" alt="" srcset="">
                         </div>
+
                         <div class="sale-card_desc mb-7">
                             <div class="desc">
                                 <div class="desc_price">
@@ -215,6 +246,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="sale-card_select mb-2 text-1">
                             <select name="" id="">
                                 <option value="">Белое золото</option>
@@ -222,6 +254,7 @@
                                 <option value="">Серебро</option>
                             </select>
                         </div>
+
                         <div class="sale-card_select mb-7 text-1">
                             <select name="" id="">
                                 <option value="">Размер: 16</option>
@@ -229,9 +262,9 @@
                                 <option value="">Размер: 20</option>
                             </select>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="sale-card">
+                    <a class="sale-card" href="">
                         <div class="sale-card_tags">
                         </div>
 
@@ -275,9 +308,9 @@
                                 <option value="">Размер: 20</option>
                             </select>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="sale-card">
+                    <a class="sale-card" href="">
                         <div class="sale-card_tags">
                         </div>
 
@@ -321,9 +354,9 @@
                                 <option value="">Размер: 20</option>
                             </select>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="sale-card">
+                    <a class="sale-card" href="">
                         <div class="sale-card_tags">
                         </div>
 
@@ -359,7 +392,7 @@
                                 <option value="">Серебро</option>
                             </select>
                         </div>
-                        
+
                         <div class="sale-card_select mb-7 text-1">
                             <select name="" id="">
                                 <option value="">Размер: 16</option>
@@ -367,8 +400,9 @@
                                 <option value="">Размер: 20</option>
                             </select>
                         </div>
-                    </div>
+                    </a>
                 </div>
+
                 <div class="sale_specials-grid">
                     <a class="special" href="">
                         <img src="assets/images/smallDiamond.png" alt="" class="special_diamond">
@@ -409,11 +443,15 @@
             </div>
         </section>
 
+        <!-- Товар дня -->
+
         <section class="mb-lg-12">
             <div class="daily">
                 <h2 class="h-lg-2">Товар дня</h2>
             </div>
         </section>
+
+        <!-- Статьи -->
 
         <section class="mb-lg-12">
             <div class="articles">

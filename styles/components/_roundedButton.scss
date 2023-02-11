@@ -16,9 +16,8 @@
         background-color: $greyLight;
     }
 
-    &.active {
+    &:active, &.active {
         color: $white;
-
         background-color: $greyDark;
-    }
+    };
 }
