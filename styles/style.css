@@ -2849,6 +2849,8 @@
   .header-ui_tools {
     display: flex;
     align-items: center; }
+    .header-ui_tools .auth a {
+      transition: ease-in 100ms; }
     .header-ui_tools .auth a:hover {
       opacity: 0.5; }
     .header-ui_tools .product-tools {
@@ -2863,6 +2865,8 @@
         transition: ease-in 100ms; }
         .header-ui_tools .product-tools_icon:hover {
           background-color: #F8F8F8; }
+        .header-ui_tools .product-tools_icon:active {
+          background-color: #E8E7E7; }
 
 .header-nav {
   width: 100%;

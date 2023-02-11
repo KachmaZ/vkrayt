@@ -53,6 +53,9 @@
         align-items: center;
 
         .auth {
+            a {                
+                transition: ease-in 100ms;
+            }
             a:hover {
                 opacity: 0.5;
             }
@@ -74,6 +77,10 @@
 
                 &:hover {
                     background-color: $light;
+                }
+
+                &:active {
+                    background-color: #E8E7E7;
                 }
             }
         }
