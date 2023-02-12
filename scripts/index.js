@@ -1,6 +1,5 @@
 function setActiveToggler(...args) {
     let blockSelectors = [...args]
-    console.log(args)
 
     blockSelectors.forEach(blockSelector => {
         $(blockSelector).click((event) => {
@@ -15,9 +14,25 @@ function setActiveToggler(...args) {
                 targetEl.addClass("active")
             }
         })
-    })
-
-    
+    })    
 }
 
-setActiveToggler(".nav", ".sale_buttons", ".color_choise", ".size_choise")
+setActiveToggler(
+    ".nav", 
+    ".sale_buttons", 
+    ".color_choise", 
+    ".size_choise", 
+    ".nav-mobile_menu"
+)
+
+$(".nav-mobile_icon").click(() => {
+    $(".nav-mobile").toggleClass("opened")
+})
+
+$(".to-favorite").click((event) => {
+    $(event.currentTarget).toggleClass("active")
+})
+
+$(".actions_item__save").click((event) => {
+    $(event.currentTarget).children("svg").toggleClass("active")
+})
