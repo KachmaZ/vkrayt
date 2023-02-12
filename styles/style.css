@@ -3320,6 +3320,7 @@
 .h-4 {
   font-family: Prata;
   font-size: 20px;
+  font-weight: 400;
   line-height: 24px; }
 
 .h-6 {
@@ -3345,6 +3346,7 @@
   .h-sm-4 {
     font-family: Prata;
     font-size: 20px;
+    font-weight: 400;
     line-height: 24px; }
   .h-sm-6 {
     font-family: 'Inter';
@@ -3369,6 +3371,7 @@
   .h-md-4 {
     font-family: Prata;
     font-size: 20px;
+    font-weight: 400;
     line-height: 24px; }
   .h-md-6 {
     font-family: 'Inter';
@@ -3393,6 +3396,7 @@
   .h-lg-4 {
     font-family: Prata;
     font-size: 20px;
+    font-weight: 400;
     line-height: 24px; }
   .h-lg-6 {
     font-family: 'Inter';
