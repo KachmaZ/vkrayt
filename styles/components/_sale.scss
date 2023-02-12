@@ -3,6 +3,12 @@
         margin-bottom: 36px;
     }
 
+    &_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
     &_cards-grid {
         display: grid;
         justify-items: center;  

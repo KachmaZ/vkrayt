@@ -1,5 +1,5 @@
 .special {
-    width: 420px;
+    width: 100%;
     height: 290px;
 
     position: relative;
@@ -67,4 +67,10 @@
         }
     }
 
+}
+
+@include respond-above(sm) {
+    .special {
+        width: 420px;
+    }
 }

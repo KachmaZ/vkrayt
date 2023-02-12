@@ -15,10 +15,6 @@
             grid-template-columns: repeat(auto-fit, 200px);
         }
 
-        // @include respond-above(lg) {
-        //     grid-template-columns: auto;
-        // }
-
         .category-card {
             width: 100%;
 
@@ -39,7 +35,7 @@
             }
 
             &_title {
-                height: 66px;
+                height: 40px;
                 padding: 0 20px;
 
                 display: flex;
@@ -47,6 +43,10 @@
                 align-items: center;
 
                 text-align: center;
+
+                @include respond-above(lg) {
+                    height: 66px;
+                }
             }
 
             &:hover {

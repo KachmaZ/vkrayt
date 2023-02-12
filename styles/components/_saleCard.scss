@@ -1,7 +1,5 @@
 .sale-card {
-    height: 370px;
-    margin-bottom: 120px;
-
+    margin: 0 20px;
     position: relative;
 
     display: flex;
@@ -28,10 +26,14 @@
             fill: $greyInactive;
 
             cursor: pointer;
-        }
 
-        svg:hover {
-            fill: $greyHovered;
+            &:hover {
+                fill: $greyHovered;
+            }
+
+            &.to-favorite.active {
+                fill: $red;
+            }
         }
 
         
@@ -46,6 +48,8 @@
     
     &_desc {
         .desc {
+            padding: 0 20px;
+
             &_price {
                 margin-bottom: 16px;
                 position: relative;
@@ -112,20 +116,34 @@
         }
 
     }
+}
 
-    @include respond-above(sm) {        
+@include respond-above(sm) {   
+    .sale-card  {    
+        height: 370px;
         width: 310px;
+
+        margin: 0;
+        margin-bottom: 120px;
         padding-top: 40px;
         
         &_images {
             margin-bottom: 24px;
         }
-
+    
         &_desc {
             width: 262px;   
+            
+            .desc {
+                padding: 0;
+            }
+        }
+     
+        &:hover {
+            height: 480px;
         }
     }
-    
-    @include respond-above(lg) {
-    }
+}
+
+@include respond-above(lg) {
 }

@@ -1,12 +1,17 @@
 .daily {
     &-content {
         display: flex;
+        align-items: center;
         flex-direction: column;
 
         &_imgs {
-            margin-right: 100px;
-
+            width: 100%;
+            max-width: 550px;
             position: relative;
+
+            img {
+                width: 100%;
+            }
 
             .tags {
                 display: flex;
@@ -20,14 +25,14 @@
         }
 
         &_form {
-            width: 100%; 
-
             .vendor {
                 color: #8F8F8F;
             }
 
             .price {
+                width: 100%;
                 display: flex;
+                flex-wrap: wrap;
 
                 border-bottom: 1px solid $greyTransparent;
 
@@ -111,6 +116,8 @@
 
                     border: 1px solid #DADADA;
                     border-radius: 50%;
+                    
+                    cursor: pointer;
 
                     &::before {
                         content: "";
@@ -214,14 +221,54 @@
 
                 &_choise {
                     display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 10px;
                 }
             }
 
             .tools {
                 display: flex;
+                justify-content: center;
 
                 &_btns {
-                    width: 400px;
+                    width: 170px;
+                }
+
+                &_actions {
+                    .actions {
+
+                        &_item {
+                            display: flex;
+                            align-items: center;
+
+                            font-family: 'Inter';
+                            font-weight: 300;
+                            font-size: 14px;
+
+                            cursor: pointer;
+                            transition: ease-in 100ms;
+
+                            span {
+                                color: inherit;
+                            }
+
+                            &:hover {
+                                color: $greyHovered;
+
+                                svg {
+                                    fill: $greyHovered;
+                                    stroke: $greyHovered;
+                                }
+                            }
+
+                            &__save {
+                                svg.active {
+                                    fill: $red;
+                                    stroke: $red;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -232,6 +279,22 @@
     .daily {
         &-content {
             flex-direction: row;
+
+            &_imgs {
+                margin-right: 100px;
+            }
+
+            &_form {
+                width: 100%; 
+            }
+
+            .tools {
+                justify-content: flex-start;
+
+                &_btns {
+                    width: 400px;
+                }
+            }
         }
     }
 }
