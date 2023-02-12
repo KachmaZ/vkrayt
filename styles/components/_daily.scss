@@ -1,9 +1,22 @@
 .daily {
     &-content {
         display: flex;
+        flex-direction: column;
 
         &_imgs {
             margin-right: 100px;
+
+            position: relative;
+
+            .tags {
+                display: flex;
+
+                position: absolute;
+                top: 16px;
+                left: 16px;
+
+                z-index: 1;
+            }
         }
 
         &_form {
@@ -139,6 +152,66 @@
             }
 
             .size {
+                &_title {
+                    display: flex;
+                    align-items: center;
+
+                    .tip {
+                        width: 18px;
+                        height: 18px;
+
+                        position: relative;
+
+                        &_icon {
+                            cursor: pointer;
+
+                            &:hover {
+                                fill: #D3D3D3;
+                            }
+                        }
+
+                        &_text {
+                            width: 271px;
+                            height: 148px;
+
+                            display: none;
+
+                            position: absolute;
+                            top: -158px;
+                            left: -125px;
+                            
+                            background: $white;
+                            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+                            
+                        }
+
+                        &:hover {
+                            &::before {
+                                content: "";
+                                width: 8px;
+                                height: 8px;
+
+                                position: absolute;
+                                top: -14px;
+                                left: 5px;
+                                z-index: 1;
+
+                                display: block;
+
+                                background-color: $white;
+
+                                transform: rotate(45deg);
+                            }
+
+                            & .tip_text {
+                                display: block;
+                            }
+                        }
+                    }
+                    
+                    
+                }
+
                 &_choise {
                     display: flex;
                 }
@@ -151,6 +224,14 @@
                     width: 400px;
                 }
             }
+        }
+    }
+}
+
+@include respond-above(xl) {
+    .daily {
+        &-content {
+            flex-direction: row;
         }
     }
 }

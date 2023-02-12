@@ -28,6 +28,14 @@
             }
         }
 
+        &-xl {
+            @include respond-above(xl){
+                &-#{$spacerKey}{
+                    #{$cssValue}: $spacer !important;
+                }
+            }
+        }
+
         &-wxpp {        
             @include respond-above(wxpp){    
                 &-#{$spacerKey}{

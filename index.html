@@ -14,6 +14,7 @@
     />
 
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <title>Goldy Store</title>
 </head>
 <body>
@@ -91,26 +92,50 @@
 
     <div class="header-nav container">
         <div class="header-nav_wrapper">
-            <nav class="nav mr-7">
-                <a href="" class="nav_link mr-sm-10">
+            <div class="nav-mobile">
+                <div class="nav-mobile_icon p-3">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_429_11066)">
+                        <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_429_11066">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="nav-mobile_menu">
+                    <a class="nav-mobile_link">Каталог</a>
+                    <a class="nav-mobile_link">Акции</a>
+                    <a class="nav-mobile_link">Бренды</a>
+                    <a class="nav-mobile_link">Магазины</a>
+                    <a class="nav-mobile_link">О нас</a>
+                    <a class="nav-mobile_link">Доставка и оплата</a>
+                    <a class="nav-mobile_link">Статьи</a>
+                </div>
+            </div>
+            <nav class="nav mr-xl-7">
+                <a class="nav_link active mr-sm-6 mr-xl-10">
                     КАТАЛОГ
                 </a>
-                <a href="" class="nav_link mr-sm-10">
+                <a class="nav_link mr-sm-6 mr-xl-10">
                     АКЦИИ
                 </a>
-                <a href="" class="nav_link mr-sm-10">
+                <a class="nav_link mr-sm-6 mr-xl-10">
                     БРЕНДЫ
                 </a>
-                <a href="" class="nav_link mr-sm-10">
+                <a class="nav_link mr-sm-6 mr-xl-10">
                     МАГАЗИНЫ
                 </a>
-                <a href="" class="nav_link mr-sm-10">
+                <a class="nav_link mr-sm-6 mr-xl-10">
                     О НАС
                 </a>
-                <a href="" class="nav_link mr-sm-10">
+                <a class="nav_link mr-sm-6 mr-xl-10">
                     ДОСТАВКА И ОПЛАТА
                 </a>
-                <a href="" class="nav_link">
+                <a class="nav_link">
                     СТАТЬИ
                 </a>
             </nav>
@@ -208,7 +233,7 @@
             <div class="sale">
                 <h2 class="h-lg-2 mb-7">Распродажа</h2>
                 <div class="sale_head">
-                    <div class="buttons">
+                    <div class="sale_buttons">
                         <button class="rounded-btn active mr-2">Кольца</button>
                         <button class="rounded-btn mr-2">Серьги</button>
                         <button class="rounded-btn mr-2">Браслеты</button>
@@ -453,6 +478,12 @@
                 <div class="daily-content">
                     <div class="daily-content_imgs">
                         <img src="assets/images/daily.png" alt="">
+                        
+                        <div class="tags">
+                            <div class="tag tag__new mr-1">New</div>
+                            <div class="tag tag__hit mr-1">Хит</div>
+                            <div class="tag tag__sale">Sale</div>
+                        </div>
                     </div>
                     <form action="" class="daily-content_form">
                         <div class="rating mb-lg-7">
@@ -520,8 +551,19 @@
                         </div>
 
                         <div class="size mb-lg-9">
-                            <div class="size-title mb-4">
+                            <div class="size_title mb-4">
                                 <h6 class="h-6 mr-2">РАЗМЕР</h6>
+                                <div class="tip">
+                                    <svg class="tip_icon" width="18" height="18" viewBox="0 0 18 18" fill="#F0F0F0" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="9" cy="9" r="9"/>
+                                        <path d="M8.25 10.4901H9.46875V10.4091C9.4858 9.42898 9.76705 8.99006 10.4915 8.54261C11.2543 8.08239 11.723 7.43466 11.723 6.47585C11.723 5.09091 10.6747 4.15341 9.1108 4.15341C7.67472 4.15341 6.52415 4.9929 6.46875 6.52699H7.7642C7.81534 5.62358 8.45881 5.22727 9.1108 5.22727C9.83523 5.22727 10.4233 5.70881 10.4233 6.46307C10.4233 7.09801 10.027 7.54545 9.51989 7.8608C8.72727 8.34659 8.25852 8.82812 8.25 10.4091V10.4901ZM8.89347 13.081C9.35795 13.081 9.74574 12.7017 9.74574 12.2287C9.74574 11.7642 9.35795 11.3807 8.89347 11.3807C8.42472 11.3807 8.04119 11.7642 8.04119 12.2287C8.04119 12.7017 8.42472 13.081 8.89347 13.081Z" fill="#303030"/>
+                                    </svg>
+                                    <div class="tip_text text-1 p-7">
+                                        Также как существующая теория напрямую 
+                                        зависит от экономической целесообразности 
+                                        принимаемых решений.
+                                    </div>
+                                </div>
                             </div>
                             <div class="size_choise">
                                 <div class="squared-btn active">16.5</div>
@@ -589,5 +631,7 @@
             </div>
         </section>
     </main>
+
+    <script src="/scripts/index.js"></script>
 </body>
 </html>
