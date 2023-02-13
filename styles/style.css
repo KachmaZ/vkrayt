@@ -3414,17 +3414,13 @@
     align-items: center; }
     .header-ui_contacts .region {
       height: 16px;
+      z-index: 11;
       display: flex;
       align-items: center;
       cursor: pointer;
       transition: ease-in 100ms; }
-      .header-ui_contacts .region:hover {
+      .header-ui_contacts .region .custom-select_current:hover {
         opacity: 0.5; }
-      .header-ui_contacts .region_select {
-        border: none;
-        cursor: pointer; }
-        .header-ui_contacts .region_select:focus-visible {
-          outline: none; }
     .header-ui_contacts .phone {
       display: flex;
       align-items: center;
@@ -3546,6 +3542,56 @@
   .nav {
     padding: 22px 110px 22px 50px; } }
 
+.custom-select {
+  width: 197px;
+  position: relative; }
+  .custom-select.sale-select {
+    width: 262px; }
+  .custom-select_current {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer; }
+    .custom-select_current.sale-select {
+      height: 40px;
+      padding: 0 16px;
+      background-color: #F0F0F0; }
+  .custom-select_icon {
+    margin-right: 32px;
+    transition: ease-in 200ms; }
+    .custom-select_icon.opened {
+      transform: rotate(180deg); }
+    .custom-select_icon.sale-select {
+      margin-right: 0; }
+  .custom-select_list {
+    width: 197px;
+    padding: 14px 0;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    z-index: 2;
+    display: none;
+    list-style: none;
+    background-color: #FFFFFF; }
+    .custom-select_list.sale-select {
+      width: 262px;
+      top: 43px; }
+    .custom-select_list.opened {
+      display: block; }
+  .custom-select_option {
+    padding: 10px 24px;
+    white-space: nowrap; }
+    .custom-select_option:hover {
+      background-color: #FAFAFA; }
+    .custom-select_option.current::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+      display: inline-block;
+      background: url("../../assets/icons/check-mark-icon.svg"); }
+
 .intro {
   height: calc(100vh - 192px); }
   .intro-content {
@@ -3597,7 +3643,7 @@
 
 @media screen and (min-width: 576px) {
   .intro .slider_pagination {
-    display: block; } }
+    display: flex; } }
 
 @media screen and (min-width: 992px) {
   .intro {
@@ -3730,6 +3776,8 @@ button {
       grid-template-columns: repeat(auto-fit, 310px); } }
 
 .sale_specials-grid {
+  position: relative;
+  z-index: -1;
   display: grid;
   justify-items: center;
   justify-content: center;

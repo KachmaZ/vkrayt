@@ -36,3 +36,7 @@ setupImgSliders(
     "#sale-card_imgSlider3",
     "#sale-card_imgSlider4",
 )   
+
+// Setting up Custom Select component
+
+setupCustomSelect()

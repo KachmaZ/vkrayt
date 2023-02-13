@@ -25,13 +25,25 @@
         <div class="header-ui">
             <div class="header-ui_contacts">
                 <div class="region mr-lg-10">
-                    <svg class="mr-lg-2" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.99995 0C4.80479 0 2.20535 2.59944 2.20535 5.79456C2.20535 9.75981 7.39095 15.581 7.61173 15.8269C7.8191 16.0579 8.18117 16.0575 8.38817 15.8269C8.60895 15.581 13.7945 9.75981 13.7945 5.79456C13.7945 2.59944 11.1951 0 7.99995 0ZM7.99995 8.70997C6.39238 8.70997 5.08457 7.40213 5.08457 5.79456C5.08457 4.187 6.39242 2.87919 7.99995 2.87919C9.60748 2.87919 10.9153 4.18703 10.9153 5.79459C10.9153 7.40216 9.60748 8.70997 7.99995 8.70997Z" fill="#303030"/>
-                    </svg>
-                    <select class="region_select text-1" name="" id="">                            
-                        <option>Санкт-Петербург</option>
-                        <option>Москва</option>
-                    </select>
+                    <div class="region_select custom-select text-1">
+                        <div class="custom-select_current">
+                            <div style="display: flex;">
+                                <svg class="mr-lg-2" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.99995 0C4.80479 0 2.20535 2.59944 2.20535 5.79456C2.20535 9.75981 7.39095 15.581 7.61173 15.8269C7.8191 16.0579 8.18117 16.0575 8.38817 15.8269C8.60895 15.581 13.7945 9.75981 13.7945 5.79456C13.7945 2.59944 11.1951 0 7.99995 0ZM7.99995 8.70997C6.39238 8.70997 5.08457 7.40213 5.08457 5.79456C5.08457 4.187 6.39242 2.87919 7.99995 2.87919C9.60748 2.87919 10.9153 4.18703 10.9153 5.79459C10.9153 7.40216 9.60748 8.70997 7.99995 8.70997Z" fill="#303030"/>
+                                </svg>
+                                <div class="value"></div>
+                            </div>
+                            <svg class="custom-select_icon" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <ul class="custom-select_list">
+                            <li class="custom-select_option current">Санкт-Петербург</li>
+                            <li class="custom-select_option">Москва</li>
+                            <li class="custom-select_option">Нижний Новгород</li>
+                            <li class="custom-select_option">Ростов-на-Дону</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <a href="tel:88007852535" class="phone text-1">
@@ -346,21 +358,37 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-2 text-1">
-                                    <select name="" id="">
-                                        <option value="">Белое золото</option>
-                                        <option value="">Жёлтое золото</option>
-                                        <option value="">Серебро</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Белое золото</li>
+                                            <li class="custom-select_option">Жёлтое золото</li>
+                                            <li class="custom-select_option">Серебро</li>
+                                        </ul>
+                                    </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-7 text-1">
-                                    <select name="" id="">
-                                        <option value="">Размер: 16</option>
-                                        <option value="">Размер: 18</option>
-                                        <option value="">Размер: 20</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Размер: 16</li>
+                                            <li class="custom-select_option">Размер: 18</li>
+                                            <li class="custom-select_option">Размер: 20</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
     
@@ -396,22 +424,38 @@
                                             Стильное кольцо из белого золота c бриллиантами
                                         </div>
                                     </div>
-                                </div>
-    
+                                </div> 
+                                
                                 <div class="sale-card_select mb-2 text-1">
-                                    <select name="" id="">
-                                        <option value="">Белое золото</option>
-                                        <option value="">Жёлтое золото</option>
-                                        <option value="">Серебро</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Белое золото</li>
+                                            <li class="custom-select_option">Жёлтое золото</li>
+                                            <li class="custom-select_option">Серебро</li>
+                                        </ul>
+                                    </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-7 text-1">
-                                    <select name="" id="">
-                                        <option value="">Размер: 16</option>
-                                        <option value="">Размер: 18</option>
-                                        <option value="">Размер: 20</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Размер: 16</li>
+                                            <li class="custom-select_option">Размер: 18</li>
+                                            <li class="custom-select_option">Размер: 20</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
     
@@ -450,19 +494,35 @@
                                 </div>
     
                                 <div class="sale-card_select mb-2 text-1">
-                                    <select name="" id="">
-                                        <option value="">Белое золото</option>
-                                        <option value="">Жёлтое золото</option>
-                                        <option value="">Серебро</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Белое золото</li>
+                                            <li class="custom-select_option">Жёлтое золото</li>
+                                            <li class="custom-select_option">Серебро</li>
+                                        </ul>
+                                    </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-7 text-1">
-                                    <select name="" id="">
-                                        <option value="">Размер: 16</option>
-                                        <option value="">Размер: 18</option>
-                                        <option value="">Размер: 20</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Размер: 16</li>
+                                            <li class="custom-select_option">Размер: 18</li>
+                                            <li class="custom-select_option">Размер: 20</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
     
@@ -501,19 +561,35 @@
                                 </div>
     
                                 <div class="sale-card_select mb-2 text-1">
-                                    <select name="" id="">
-                                        <option value="">Белое золото</option>
-                                        <option value="">Жёлтое золото</option>
-                                        <option value="">Серебро</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Белое золото</li>
+                                            <li class="custom-select_option">Жёлтое золото</li>
+                                            <li class="custom-select_option">Серебро</li>
+                                        </ul>
+                                    </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-7 text-1">
-                                    <select name="" id="">
-                                        <option value="">Размер: 16</option>
-                                        <option value="">Размер: 18</option>
-                                        <option value="">Размер: 20</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Размер: 16</li>
+                                            <li class="custom-select_option">Размер: 18</li>
+                                            <li class="custom-select_option">Размер: 20</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -555,21 +631,37 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-2 text-1">
-                                    <select name="" id="">
-                                        <option value="">Белое золото</option>
-                                        <option value="">Жёлтое золото</option>
-                                        <option value="">Серебро</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Белое золото</li>
+                                            <li class="custom-select_option">Жёлтое золото</li>
+                                            <li class="custom-select_option">Серебро</li>
+                                        </ul>
+                                    </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-7 text-1">
-                                    <select name="" id="">
-                                        <option value="">Размер: 16</option>
-                                        <option value="">Размер: 18</option>
-                                        <option value="">Размер: 20</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Размер: 16</li>
+                                            <li class="custom-select_option">Размер: 18</li>
+                                            <li class="custom-select_option">Размер: 20</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
     
@@ -605,22 +697,38 @@
                                             Стильное кольцо из белого золота c бриллиантами
                                         </div>
                                     </div>
-                                </div>
-    
+                                </div> 
+                                
                                 <div class="sale-card_select mb-2 text-1">
-                                    <select name="" id="">
-                                        <option value="">Белое золото</option>
-                                        <option value="">Жёлтое золото</option>
-                                        <option value="">Серебро</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Белое золото</li>
+                                            <li class="custom-select_option">Жёлтое золото</li>
+                                            <li class="custom-select_option">Серебро</li>
+                                        </ul>
+                                    </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-7 text-1">
-                                    <select name="" id="">
-                                        <option value="">Размер: 16</option>
-                                        <option value="">Размер: 18</option>
-                                        <option value="">Размер: 20</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Размер: 16</li>
+                                            <li class="custom-select_option">Размер: 18</li>
+                                            <li class="custom-select_option">Размер: 20</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
     
@@ -659,19 +767,35 @@
                                 </div>
     
                                 <div class="sale-card_select mb-2 text-1">
-                                    <select name="" id="">
-                                        <option value="">Белое золото</option>
-                                        <option value="">Жёлтое золото</option>
-                                        <option value="">Серебро</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Белое золото</li>
+                                            <li class="custom-select_option">Жёлтое золото</li>
+                                            <li class="custom-select_option">Серебро</li>
+                                        </ul>
+                                    </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-7 text-1">
-                                    <select name="" id="">
-                                        <option value="">Размер: 16</option>
-                                        <option value="">Размер: 18</option>
-                                        <option value="">Размер: 20</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Размер: 16</li>
+                                            <li class="custom-select_option">Размер: 18</li>
+                                            <li class="custom-select_option">Размер: 20</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
     
@@ -710,19 +834,35 @@
                                 </div>
     
                                 <div class="sale-card_select mb-2 text-1">
-                                    <select name="" id="">
-                                        <option value="">Белое золото</option>
-                                        <option value="">Жёлтое золото</option>
-                                        <option value="">Серебро</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Белое золото</li>
+                                            <li class="custom-select_option">Жёлтое золото</li>
+                                            <li class="custom-select_option">Серебро</li>
+                                        </ul>
+                                    </div>
                                 </div>
-    
+
                                 <div class="sale-card_select mb-7 text-1">
-                                    <select name="" id="">
-                                        <option value="">Размер: 16</option>
-                                        <option value="">Размер: 18</option>
-                                        <option value="">Размер: 20</option>
-                                    </select>
+                                    <div class="custom-select sale-select">
+                                        <div class="custom-select_current sale-select">
+                                            <div class="value"></div>
+                                            <svg class="custom-select_icon sale-select" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.712158L4.23753 3.94969L7.47507 0.712158" stroke="#303030" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <ul class="custom-select_list sale-select">
+                                            <li class="custom-select_option current">Размер: 16</li>
+                                            <li class="custom-select_option">Размер: 18</li>
+                                            <li class="custom-select_option">Размер: 20</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1159,6 +1299,7 @@
         </section>
     </main>
 
+    <script src="./scripts/customSelect.js"></script>
     <script src="./scripts/toggler.js"></script>
     <script src="./scripts/slider.js"></script>
     <script src="./scripts/imgSlider.js"></script>

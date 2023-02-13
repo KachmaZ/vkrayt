@@ -91,7 +91,7 @@
     .intro {
         .slider {
             &_pagination {
-                display: block;
+                display: flex;
             }
         }
     }

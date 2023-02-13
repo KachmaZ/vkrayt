@@ -1,0 +1,89 @@
+.custom-select {
+    width: 197px;
+    position: relative;
+    // z-index: 2;
+
+    &.sale-select {
+        width: 262px;
+    }
+
+    &_current {
+        height: 100%;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        cursor: pointer;
+
+        &.sale-select {
+            height: 40px;
+            padding: 0 16px;
+            
+            background-color: $greyTransparent;
+        }
+    }
+
+    &_icon {
+        margin-right: 32px;
+
+        transition: ease-in 200ms;
+
+        &.opened {
+            transform: rotate(180deg);
+        }
+
+        &.sale-select {
+            margin-right: 0;
+        }
+    }
+
+    &_list {
+        width: 197px;
+
+        padding: 14px 0;        
+
+        position: absolute;
+        top: 24px;
+        left: 0;
+        z-index: 2;
+
+        display: none;
+
+        list-style: none;
+
+        background-color: $white;
+
+        &.sale-select {
+            width: 262px;
+            top: 43px;
+        }
+
+        &.opened {
+            display: block;
+        }
+    }
+
+    &_option {
+        padding: 10px 24px;
+
+        white-space: nowrap;
+
+        &:hover {
+            background-color: #FAFAFA;
+        }
+        
+        &.current::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+
+            margin-left: 10px;
+            
+            display: inline-block;
+
+            background: url("../../assets/icons/check-mark-icon.svg");
+        }
+    }
+}
