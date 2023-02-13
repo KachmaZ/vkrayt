@@ -1,4 +1,23 @@
 .articles {
+    &_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        .read-more {
+            display: none;
+
+            @include respond-above(sm) {
+                display: block;
+            }
+        }
+    }
+
     &_grid {        
         display: grid;
         justify-items: center;  

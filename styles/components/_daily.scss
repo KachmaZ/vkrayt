@@ -1,16 +1,28 @@
 .daily {
+    &-head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_slider-buttons {
+        display: flex;
+    }
+
     &-content {
         display: flex;
         align-items: center;
         flex-direction: column;
 
+        white-space: normal;
+
         &_imgs {
             width: 100%;
             max-width: 550px;
+            max-height: 550px;
             position: relative;
 
             img {
-                width: 100%;
+                max-height: 550px;
             }
 
             .tags {
@@ -21,6 +33,24 @@
                 left: 16px;
 
                 z-index: 1;
+            }
+
+            .slider_left, .slider_right {
+                height: 100%;
+
+                position: absolute;
+                top: 0;
+
+                display: flex;
+                align-items: center;
+            }
+
+            .slider_left {
+                left: 16px;
+            }
+
+            .slider_right {
+                right: 16px;
             }
         }
 
@@ -246,10 +276,13 @@
                             font-size: 14px;
 
                             cursor: pointer;
-                            transition: ease-in 100ms;
 
                             span {
                                 color: inherit;
+                            }
+
+                            svg {
+                                transition: ease-in 100ms;
                             }
 
                             &:hover {
@@ -262,7 +295,7 @@
                             }
 
                             &__save {
-                                svg.active {
+                                svg.active, svg:active {
                                     fill: $red;
                                     stroke: $red;
                                 }

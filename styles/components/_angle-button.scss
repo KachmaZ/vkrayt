@@ -1,0 +1,12 @@
+.angle-button {
+    cursor: pointer;
+    
+    &.left {
+        transform: scaleX(-1);
+    }
+
+    &.disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+}

@@ -1,0 +1,21 @@
+.pagination {
+    display: flex;
+
+    &_item {
+        width: 8px;
+        height: 8px;
+
+        margin-right: 8px;
+        
+        background-color: $white;
+        
+        border: 1px solid $greyDark;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        &.current {
+            background-color: $greyDark;
+        }
+    }
+}

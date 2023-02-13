@@ -1,21 +1,4 @@
-function setActiveToggler(...args) {
-    let blockSelectors = [...args]
-
-    blockSelectors.forEach(blockSelector => {
-        $(blockSelector).click((event) => {
-            let targetEl = $(event.target)
-            let targetBlock = $(blockSelector)
-            
-            if (targetEl.parent()[0] == targetBlock[0] & !targetEl.hasClass("disabled")) {
-                targetBlock.children().each((index, el) => {
-                    $(el).removeClass("active")
-                })
-    
-                targetEl.addClass("active")
-            }
-        })
-    })    
-}
+// Setting up toggle effects
 
 setActiveToggler(
     ".nav", 
@@ -36,3 +19,20 @@ $(".to-favorite").click((event) => {
 $(".actions_item__save").click((event) => {
     $(event.currentTarget).children("svg").toggleClass("active")
 })
+
+// Setting up sliders 
+
+setupSliders(
+    "#intro-slider",
+    "#sale-slider",
+    "#daily-slider" 
+)
+
+setupImgSliders(
+    "#daily-imgSlider1",
+    "#daily-imgSlider2",
+    "#sale-card_imgSlider1",
+    "#sale-card_imgSlider2",
+    "#sale-card_imgSlider3",
+    "#sale-card_imgSlider4",
+)   

@@ -1,0 +1,53 @@
+.arrow-button {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $greyDark;
+    border-radius: 50%;
+
+    background-color: $white;
+
+    svg {
+        transition: margin linear 200ms;
+    }
+
+    &:hover, &:active {
+        background-color: #F5F5F5;
+    }
+
+    &.right {
+        &:active {
+            svg {
+                margin-left: 16px;
+            }
+        }
+    }
+    
+    &.left {
+        svg {
+            transform: scaleX(-1);
+        }
+
+        &:active {
+            svg {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    &.disabled {
+        opacity: 0.5;
+
+        svg:active {
+            margin: 0;
+        }
+
+        &:hover, &:active {
+            background-color: $white;
+        }
+    }
+}

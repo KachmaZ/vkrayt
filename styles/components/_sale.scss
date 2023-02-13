@@ -1,12 +1,20 @@
 .sale {
     &_head {
         margin-bottom: 36px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
     &_buttons {
         display: flex;
         flex-wrap: wrap;
         row-gap: 8px;
+    }
+
+    &_slider-buttons {
+        display: flex;
     }
 
     &_cards-grid {

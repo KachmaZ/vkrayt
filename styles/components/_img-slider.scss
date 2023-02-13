@@ -1,0 +1,16 @@
+.img-slider {
+    &_content {
+        width: 100%;
+
+        font-size: 0; // Delete whitespaces between inline-blocks
+        white-space: nowrap; // Children in one row without wrappnig
+
+        transition: ease-in 300ms;
+    }
+
+    &_slide {
+        width: 100%;
+
+        display: inline-block;
+    }
+}

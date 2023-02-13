@@ -34,6 +34,7 @@
 
         &_img {
             // height: 100%;
+            max-width: 548px;
             max-height: 548px;
             
             z-index: 1;
@@ -50,6 +51,36 @@
         }
     }
     
+    .slider {
+        &_left, &_right {
+            height: 100%;
+
+            position: absolute;
+            z-index: 1;
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        &_left {
+            left: 24px;
+            top: 0;
+        }
+
+        &_right {
+            right: 24px;
+            top: 0;
+        }
+
+        &_pagination {
+            margin: 0 50%;
+
+            position: absolute;
+            bottom: 24px;
+        }
+    }
+
 }
 
 
@@ -61,6 +92,8 @@
 @include respond-above(lg) {
     .intro {
         height: calc(100vh - 192px);
+
+        position: relative;
     
         &-slide {
             padding-left: 126px;
@@ -81,5 +114,7 @@
                 }
             }
         }
+
+        
     }
 }

@@ -27,7 +27,7 @@
                 }
             }
         }
-
+        
         &-xl {
             @include respond-above(xl){
                 &-#{$spacerKey}{
