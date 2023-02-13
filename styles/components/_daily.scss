@@ -212,13 +212,17 @@
                             height: 148px;
 
                             display: none;
+                            top: -158px;
+                            left: -58px;
 
                             position: absolute;
-                            top: -158px;
-                            left: -125px;
                             
                             background: $white;
                             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+
+                            @include respond-above(sm) {
+                                left: -125px;
+                            }
                             
                         }
 

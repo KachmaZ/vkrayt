@@ -4068,11 +4068,14 @@ button {
         width: 271px;
         height: 148px;
         display: none;
-        position: absolute;
         top: -158px;
-        left: -125px;
+        left: -58px;
+        position: absolute;
         background: #FFFFFF;
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); }
+        @media screen and (min-width: 576px) {
+          .daily-content_form .size_title .tip_text {
+            left: -125px; } }
       .daily-content_form .size_title .tip:hover::before {
         content: "";
         width: 8px;
