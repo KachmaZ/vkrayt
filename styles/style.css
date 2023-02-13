@@ -3704,8 +3704,12 @@ button {
 .sale_head {
   margin-bottom: 36px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-end; }
+  @media screen and (min-width: 576px) {
+    .sale_head {
+      flex-direction: row; } }
 
 .sale_buttons {
   display: flex;
