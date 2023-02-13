@@ -6,7 +6,7 @@ function setActiveToggler(...args) {
             let targetEl = $(event.target)
             let targetBlock = $(blockSelector)
             
-            if (targetEl.parent()[0] == targetBlock[0]) {
+            if (targetEl.parent()[0] == targetBlock[0] & !targetEl.hasClass("disabled")) {
                 targetBlock.children().each((index, el) => {
                     $(el).removeClass("active")
                 })
