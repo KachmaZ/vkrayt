@@ -3592,7 +3592,12 @@
   .intro .slider_pagination {
     margin: 0 50%;
     position: absolute;
-    bottom: 24px; }
+    bottom: 24px;
+    display: none; }
+
+@media screen and (min-width: 576px) {
+  .intro .slider_pagination {
+    display: block; } }
 
 @media screen and (min-width: 992px) {
   .intro {
@@ -3741,7 +3746,8 @@ button {
   .sale-card_tags {
     position: absolute;
     left: 24px;
-    top: 16px; }
+    top: 16px;
+    z-index: 1; }
   .sale-card_icons {
     position: absolute;
     top: 16px;

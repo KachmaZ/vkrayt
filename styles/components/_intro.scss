@@ -78,6 +78,8 @@
 
             position: absolute;
             bottom: 24px;
+
+            display: none;
         }
     }
 
@@ -86,7 +88,13 @@
 
 
 @include respond-above(sm) {
-
+    .intro {
+        .slider {
+            &_pagination {
+                display: block;
+            }
+        }
+    }
 }
 
 @include respond-above(lg) {
@@ -113,8 +121,6 @@
                     height: 100%;
                 }
             }
-        }
-
-        
+        }        
     }
 }
