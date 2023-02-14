@@ -4000,6 +4000,9 @@ button {
         line-height: 20px; }
       .daily-content_form .price_value__old {
         color: #8F8F8F;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
         text-decoration-line: line-through; }
     .daily-content_form .price_timer .timer {
       width: 224px;
