@@ -3590,7 +3590,7 @@
       height: 16px;
       margin-left: 10px;
       display: inline-block;
-      background: url("../../assets/icons/check-mark-icon.svg"); }
+      background: url("../assets/icons/check-mark-icon.svg"); }
 
 .intro {
   height: calc(100vh - 192px); }
