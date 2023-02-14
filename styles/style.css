@@ -4166,6 +4166,8 @@ button {
     @media screen and (min-width: 576px) {
       .articles_title .read-more {
         display: block; } }
+    .articles_title .read-more:hover {
+      opacity: 0.5; }
 
 .articles_grid {
   display: grid;

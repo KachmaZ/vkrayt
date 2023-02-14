@@ -15,6 +15,10 @@
             @include respond-above(sm) {
                 display: block;
             }
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 
