@@ -4162,10 +4162,10 @@ button {
   align-items: flex-end;
   font-family: 'Inter';
   font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase; }
+  font-size: 14px; }
   .articles_title .read-more {
-    display: none; }
+    display: none;
+    text-transform: uppercase; }
     @media screen and (min-width: 576px) {
       .articles_title .read-more {
         display: block; } }
