@@ -4139,7 +4139,7 @@ button {
     transform: scaleX(-1); }
   .angle-button.disabled {
     opacity: 0.5;
-    cursor: default; }
+    pointer-events: none; }
 
 .rating {
   display: flex; }
@@ -4215,7 +4215,7 @@ button {
     border: none; }
   .squared-btn.disabled {
     color: #DADADA;
-    cursor: default; }
+    pointer-events: none; }
     .squared-btn.disabled:hover {
       border: 1px solid #DADADA; }
     .squared-btn.disabled:active {
@@ -4231,7 +4231,8 @@ button {
   align-items: center;
   border: 1px solid #303030;
   border-radius: 50%;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  cursor: pointer; }
   .arrow-button svg {
     transition: margin linear 200ms; }
   .arrow-button:hover, .arrow-button:active {
@@ -4243,7 +4244,8 @@ button {
   .arrow-button.left:active svg {
     margin-right: 16px; }
   .arrow-button.disabled {
-    opacity: 0.5; }
+    opacity: 0.5;
+    pointer-events: none; }
     .arrow-button.disabled svg:active {
       margin: 0; }
     .arrow-button.disabled:hover, .arrow-button.disabled:active {

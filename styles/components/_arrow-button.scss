@@ -11,6 +11,8 @@
 
     background-color: $white;
 
+    cursor: pointer;
+    
     svg {
         transition: margin linear 200ms;
     }
@@ -41,6 +43,7 @@
 
     &.disabled {
         opacity: 0.5;
+        pointer-events: none;
 
         svg:active {
             margin: 0;
