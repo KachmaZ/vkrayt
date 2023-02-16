@@ -1,7 +1,6 @@
 .custom-select {
     width: 197px;
     position: relative;
-    // z-index: 2;
 
     &.sale-select {
         width: 262px;
@@ -17,6 +16,8 @@
 
         cursor: pointer;
 
+        transition: ease-in 300ms;
+
         &.sale-select {
             height: 40px;
             padding: 0 16px;
@@ -28,7 +29,7 @@
     &_icon {
         margin-right: 32px;
 
-        transition: ease-in 200ms;
+        transition: ease-in 300ms;
 
         &.opened {
             transform: rotate(180deg);
@@ -69,6 +70,8 @@
         padding: 10px 24px;
 
         white-space: nowrap;
+
+        transition: ease-in 300ms;
 
         &:hover {
             background-color: #FAFAFA;

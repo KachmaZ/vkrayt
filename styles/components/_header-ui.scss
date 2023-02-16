@@ -21,7 +21,7 @@
 
             cursor: pointer;
 
-            transition: ease-in 100ms;
+            transition: ease-in 300ms;
 
             .custom-select_current {
                 &:hover {
@@ -34,7 +34,7 @@
             display: flex;
             align-items: center;
             
-            transition: ease-in 100ms;
+            transition: ease-in 300ms;
 
             &:hover {
                 opacity: 0.5;
@@ -48,7 +48,7 @@
 
         .auth {
             a {                
-                transition: ease-in 100ms;
+                transition: ease-in 300ms;
             }
             a:hover {
                 opacity: 0.5;
@@ -70,7 +70,7 @@
 
                 cursor: pointer;
 
-                transition: ease-in 100ms;
+                transition: ease-in 300ms;
 
                 &:hover {
                     background-color: $light;

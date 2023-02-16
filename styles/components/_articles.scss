@@ -12,6 +12,8 @@
             display: none;
             text-transform: uppercase;
 
+            transition: opacity ease-in 300ms;
+
             @include respond-above(sm) {
                 display: block;
             }

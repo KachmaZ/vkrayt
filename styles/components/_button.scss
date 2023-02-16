@@ -16,6 +16,8 @@ button {
 
         background-color: $greyDark;
 
+        transition: ease-in 300ms;
+
         &:hover {
             background-color: $grey;
         }
@@ -32,6 +34,8 @@ button {
         background-color: $white;
 
         border: 1px solid $greyDark;
+
+        transition: ease-in 300ms;
 
         &:hover {
             color: $white;

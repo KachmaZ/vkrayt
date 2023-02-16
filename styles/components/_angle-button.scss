@@ -1,5 +1,7 @@
 .angle-button {
     cursor: pointer;
+
+    transition: opacity ease-in 300ms;
     
     &.left {
         transform: scaleX(-1);

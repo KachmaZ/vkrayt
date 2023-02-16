@@ -3418,20 +3418,20 @@
       display: flex;
       align-items: center;
       cursor: pointer;
-      transition: ease-in 100ms; }
+      transition: ease-in 300ms; }
       .header-ui_contacts .region .custom-select_current:hover {
         opacity: 0.5; }
     .header-ui_contacts .phone {
       display: flex;
       align-items: center;
-      transition: ease-in 100ms; }
+      transition: ease-in 300ms; }
       .header-ui_contacts .phone:hover {
         opacity: 0.5; }
   .header-ui_tools {
     display: flex;
     align-items: center; }
     .header-ui_tools .auth a {
-      transition: ease-in 100ms; }
+      transition: ease-in 300ms; }
     .header-ui_tools .auth a:hover {
       opacity: 0.5; }
     .header-ui_tools .product-tools {
@@ -3444,7 +3444,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        transition: ease-in 100ms; }
+        transition: ease-in 300ms; }
         .header-ui_tools .product-tools_icon:hover {
           background-color: #F8F8F8; }
         .header-ui_tools .product-tools_icon:active {
@@ -3484,7 +3484,7 @@
   .header-nav .nav-mobile {
     position: relative; }
     .header-nav .nav-mobile_icon {
-      transition: ease-in 200ms; }
+      transition: ease-in 300ms; }
     .header-nav .nav-mobile_menu {
       width: 300px;
       height: 100vh;
@@ -3501,7 +3501,7 @@
       font-family: Inter;
       font-size: 13px;
       font-weight: 500;
-      transition: opacity ease-in 100ms; }
+      transition: opacity ease-in 300ms; }
       .header-nav .nav-mobile_link:hover, .header-nav .nav-mobile_link.active {
         opacity: 0.5; }
     .header-nav .nav-mobile.opened .nav-mobile_icon {
@@ -3516,7 +3516,7 @@
       font-family: Inter;
       font-size: 13px;
       font-weight: 500;
-      transition: opacity ease-in 100ms; }
+      transition: opacity ease-in 300ms; }
       .header-nav .nav_link:hover, .header-nav .nav_link.active {
         opacity: 0.5; }
   .header-nav .search {
@@ -3552,14 +3552,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: ease-in 300ms; }
     .custom-select_current.sale-select {
       height: 40px;
       padding: 0 16px;
       background-color: #F0F0F0; }
   .custom-select_icon {
     margin-right: 32px;
-    transition: ease-in 200ms; }
+    transition: ease-in 300ms; }
     .custom-select_icon.opened {
       transform: rotate(180deg); }
     .custom-select_icon.sale-select {
@@ -3581,7 +3582,8 @@
       display: block; }
   .custom-select_option {
     padding: 10px 24px;
-    white-space: nowrap; }
+    white-space: nowrap;
+    transition: ease-in 300ms; }
     .custom-select_option:hover {
       background-color: #FAFAFA; }
     .custom-select_option.current::after {
@@ -3672,7 +3674,8 @@ button {
 .btn-1 {
   color: #FFFFFF;
   text-transform: uppercase;
-  background-color: #303030; }
+  background-color: #303030;
+  transition: ease-in 300ms; }
   .btn-1:hover {
     background-color: #505050; }
   .btn-1:active {
@@ -3682,7 +3685,8 @@ button {
   color: #000000;
   text-transform: uppercase;
   background-color: #FFFFFF;
-  border: 1px solid #303030; }
+  border: 1px solid #303030;
+  transition: ease-in 300ms; }
   .btn-2:hover {
     color: #FFFFFF;
     background-color: #303030; }
@@ -3714,7 +3718,7 @@ button {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: ease-in 200ms; }
+      transition: ease-in 300ms; }
     .popular_grid .category-card_title {
       height: 40px;
       padding: 0 20px;
@@ -3742,7 +3746,7 @@ button {
   background-color: #F0F0F0;
   border-radius: 21px;
   cursor: pointer;
-  transition: background-color ease-in 100ms; }
+  transition: background-color ease-in 300ms; }
   .rounded-btn:hover {
     background-color: #DDDDDD; }
   .rounded-btn:active, .rounded-btn.active {
@@ -4113,7 +4117,7 @@ button {
       .daily-content_form .tools_actions .actions_item span {
         color: inherit; }
       .daily-content_form .tools_actions .actions_item svg {
-        transition: ease-in 100ms; }
+        transition: ease-in 300ms; }
       .daily-content_form .tools_actions .actions_item:hover {
         color: #979797; }
         .daily-content_form .tools_actions .actions_item:hover svg {
@@ -4136,7 +4140,8 @@ button {
         width: 400px; } }
 
 .angle-button {
-  cursor: pointer; }
+  cursor: pointer;
+  transition: opacity ease-in 300ms; }
   .angle-button.left {
     transform: scaleX(-1); }
   .angle-button.disabled {
@@ -4167,7 +4172,8 @@ button {
   font-size: 14px; }
   .articles_title .read-more {
     display: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: opacity ease-in 300ms; }
     @media screen and (min-width: 576px) {
       .articles_title .read-more {
         display: block; } }
@@ -4208,7 +4214,7 @@ button {
   background-color: #FFFFFF;
   border: 1px solid #DADADA;
   cursor: pointer;
-  transition: background-color ease-in 100ms; }
+  transition: background-color ease-in 300ms; }
   .squared-btn:hover {
     border: 1px solid #303030; }
   .squared-btn:active, .squared-btn.active {
@@ -4236,7 +4242,7 @@ button {
   background-color: #FFFFFF;
   cursor: pointer; }
   .arrow-button svg {
-    transition: margin linear 200ms; }
+    transition: margin linear 300ms; }
   .arrow-button:hover, .arrow-button:active {
     background-color: #F5F5F5; }
   .arrow-button.right:active svg {
@@ -4262,6 +4268,7 @@ button {
     background-color: #FFFFFF;
     border: 1px solid #303030;
     border-radius: 50%;
+    transition: ease-in 300ms;
     cursor: pointer; }
     .pagination_item.current {
       background-color: #303030; }
