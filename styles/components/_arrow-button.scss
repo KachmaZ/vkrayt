@@ -12,6 +12,8 @@
     background-color: $white;
 
     cursor: pointer;
+
+    transition: ease-in 300ms;
     
     svg {
         transition: margin linear 300ms;

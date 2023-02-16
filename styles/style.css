@@ -4240,7 +4240,8 @@ button {
   border: 1px solid #303030;
   border-radius: 50%;
   background-color: #FFFFFF;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: ease-in 300ms; }
   .arrow-button svg {
     transition: margin linear 300ms; }
   .arrow-button:hover, .arrow-button:active {
