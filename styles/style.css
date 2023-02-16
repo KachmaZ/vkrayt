@@ -4045,7 +4045,8 @@ button {
     margin-right: 8px;
     border: 1px solid #DADADA;
     border-radius: 50%;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: border-color ease-in 300ms; }
     .daily-content_form .color_ring::before {
       content: "";
       display: block;
@@ -4068,9 +4069,11 @@ button {
     .daily-content_form .size_title .tip {
       width: 18px;
       height: 18px;
-      position: relative; }
+      position: relative;
+      transition: ease-in 300ms; }
       .daily-content_form .size_title .tip_icon {
-        cursor: pointer; }
+        cursor: pointer;
+        transition: ease-in 300ms; }
         .daily-content_form .size_title .tip_icon:hover {
           fill: #D3D3D3; }
       .daily-content_form .size_title .tip_text {
@@ -4081,7 +4084,8 @@ button {
         left: -58px;
         position: absolute;
         background: #FFFFFF;
-        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); }
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        transition: display ease-in 300ms; }
         @media screen and (min-width: 576px) {
           .daily-content_form .size_title .tip_text {
             left: -125px; } }

@@ -152,6 +152,8 @@
                     
                     cursor: pointer;
 
+                    transition: border-color ease-in 300ms;
+
                     &::before {
                         content: "";
                         display: block;
@@ -202,8 +204,12 @@
 
                         position: relative;
 
+                        transition: ease-in 300ms;
+
                         &_icon {
                             cursor: pointer;
+
+                            transition: ease-in 300ms;
 
                             &:hover {
                                 fill: #D3D3D3;
@@ -222,6 +228,8 @@
                             
                             background: $white;
                             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+
+                            transition: display ease-in 300ms;
 
                             @include respond-above(sm) {
                                 left: -125px;
